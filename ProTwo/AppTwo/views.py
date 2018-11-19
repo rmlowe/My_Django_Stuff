@@ -6,5 +6,5 @@ def index(request):
     return HttpResponse("<em>My Second Project</em>")
 
 def help(request):
-    my_dict = {'title':"Help Page"}
-    return render(request,'AppTwo/help.html',my_dict)
+    helpdict = {'help_insert':'HELP PAGE'}
+    return render(request,'AppTwo/help.html',context=helpdict)
