@@ -4,3 +4,7 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("<em>My Second Project</em>")
+
+def help(request):
+    my_dict = {'title':"Help Page"}
+    return render(request,'AppTwo/help.html',my_dict)
